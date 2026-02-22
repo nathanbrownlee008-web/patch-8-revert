@@ -8,5 +8,14 @@
     "Model Probability",
     "Bookmaker Odds"
   ],
-  "rows": []
-}
+  "rows": [
+  [
+    "2026-02-22",
+    "Premier League",
+    "Arsenal",
+    "Chelsea",
+    "Over 2.5",
+    0.72,
+    1.95
+  ]
+  ]
