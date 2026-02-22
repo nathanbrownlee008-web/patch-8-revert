@@ -263,6 +263,25 @@ function buildCards(){
 
     item.appendChild(top);
     item.appendChild(grid);
+
+    // Add to History button (Value Bets only)
+    if (state.current.slug === "value-bets") {
+      const btnWrap = document.createElement("div");
+      btnWrap.style.marginTop = "10px";
+
+      const btn = document.createElement("button");
+      btn.className = "btn";
+      btn.textContent = "Add to History";
+
+      btn.addEventListener("click", function(e){
+        e.stopPropagation();
+        addToHistory(r);
+      });
+
+      btnWrap.appendChild(btn);
+      item.appendChild(btnWrap);
+    }
+
     list.appendChild(item);
   });
 }
